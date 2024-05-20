@@ -990,31 +990,31 @@ void setup() {
 
       myJson["CBNULL"] = checkbox_nulleinspeisung; //checkbox
       if(checkbox_nulleinspeisung){       // Stausanzeige
-        myJson["NULLSTATE"] = "EIN";
+        myJson["NULLSTATE"] = "ON";
       }else{
         myJson["NULLSTATE"] = "OFF";
       }
 
       myJson["CBMQTTSTATE"] = checkbox_mqttenabled; //checkbox
       if(checkbox_mqttenabled){
-        myJson["MQTTSTATE"] = "EIN";
+        myJson["MQTTSTATE"] = "ON";
       }else{
-        myJson["MQTTSTATE"] = "AUS";
+        myJson["MQTTSTATE"] = "OFF";
       }
 
       myJson["CBTIMER1"] = checkbox_timer1; //checkbox
       myJson["CBTIMER2"] = checkbox_timer2; //checkbox
       if(checkbox_timer1 || checkbox_timer2){
-        myJson["TIMERSTATE"] = "EIN";
+        myJson["TIMERSTATE"] = "ON";
       }else{
-        myJson["TIMERSTATE"] = "AUS";
+        myJson["TIMERSTATE"] = "OFF";
       }
 
       myJson["CBBATSCHUTZ"] = checkbox_batschutz; //checkbox
       if(checkbox_batschutz){
-        myJson["BATTSTATE"] = "EIN";
+        myJson["BATTSTATE"] = "ON";
       }else{
-        myJson["BATTSTATE"] = "AUS";
+        myJson["BATTSTATE"] = "OFF";
       }
 
       myJson["CBMETERL1"] = checkbox_meter_l1; //checkbox Shelly L1
