@@ -45,8 +45,8 @@ Note: The RS485 development board uses a MAX485 level converter which is designe
 <img src="https://github.com/krulkip/soyosource-powercontroller/blob/main/image/wiring_nodemcu_rs485.png" width="512">
 <img src="https://github.com/krulkip/soyosource-powercontroller/blob/english/image/SoyoSource2.jpg" width="512">
 
-### Figure 2: Einstellmenü SoyoSource
-Hier muss 'Bat AutoLimit Grid' auf Y stehen
+### Figure 2: Control Menu SoyoSource
+The 'Bat AutoLimit Grid' must be on Y
 
 <img src="https://github.com/matlen67/soyosource-powercontroller/blob/main/image/display_setup.jpg" width="256">
  
