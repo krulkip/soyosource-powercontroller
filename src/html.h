@@ -327,7 +327,7 @@ const char index_html[] PROGMEM = R"rawliteral(
               <table>
                 <tbody>
                   <tr>
-                    <td width="180px"><span>Nulleinspeisung</span></td>
+                    <td width="180px"><span>Zero feed-in</span></td>
                     <td class="alnright"><span id="NULLSTATE"></span></td>
                   </tr>
                 </tbody>
@@ -340,7 +340,7 @@ const char index_html[] PROGMEM = R"rawliteral(
             <div class="flexColRight"><input type="number" min="0" max="2000" id="MAXWATTINPUT"/></div>
           </div>
           <div class="flexContainer">
-            <div class="flexColLeft">Nullpunkt-Offset [W]:</div>
+            <div class="flexColLeft">Zero-Offset [W]:</div>
             <div class="flexColRight"><input type="number" min="0" max="200" id="NULLOFFSET" /></div>
           </div>
           <div class="flexContainer">
@@ -348,7 +348,7 @@ const char index_html[] PROGMEM = R"rawliteral(
             <div class="flexColRight"><input type="number" min="500" max="30000" id="NULLINTERVAL" /></div>
           </div>
           <div class="detailsFlexBox">
-            <div>Aktiv:</div>
+            <div>Active:</div>
             <div><input type="checkbox" onchange="toggleCheckbox(this)" id="CBNULL"/></div>
           </div>
         </details>
@@ -382,7 +382,7 @@ const char index_html[] PROGMEM = R"rawliteral(
             <div class="flexColRight"><input type="number" id="MQTTPORT" min="0" max="65535" /></div>
           </div>
           <div class="flexContainer">
-            <div style="padding-right: 50px;">Aktiv: <input type="checkbox" onchange="toggleCheckbox(this)" id="CBMQTTSTATE" /></div>
+            <div style="padding-right: 50px;">Active: <input type="checkbox" onchange="toggleCheckbox(this)" id="CBMQTTSTATE" /></div>
             <div>Status: </label><span id="MQTTSTATECL"></span></div>
           </div>
           <hr>
@@ -419,7 +419,7 @@ const char index_html[] PROGMEM = R"rawliteral(
               <table>
                 <tbody>
                   <tr>
-                    <td width="180px"><span>Batterieschutz</span></td>
+                    <td width="180px"><span>Batterieprotection</span></td>
                     <td class="alnright"><span id="BATTSTATE"></span></td>
                   </tr>
                 </tbody>
@@ -428,15 +428,15 @@ const char index_html[] PROGMEM = R"rawliteral(
           </summary>
           <hr>
           <div class="flexContainer">
-            <div class="flexColLeft">Stop Output bei SOC kleiner</div>
+            <div class="flexColLeft">Stop Output when SOC kleiner</div>
             <div class="flexColRight"><input type="number" id="BATSOCSTOP" min="10" max="100" placeholder="20" /> %</div>
           </div>
           <div class="flexContainer">
-            <div class="flexColLeft">Restart Output bei SOC gr&ouml&szliger</div>
+            <div class="flexColLeft">Restart Output when SOC greater</div>
             <div class="flexColRight"><input type="number" id="BATSOCSTART" min="15" max="100" placeholder="80" /> %</div>
           </div>
           <div class="detailsFlexBox">
-            <div>Aktiv:</div>
+            <div>Active:</div>
             <div><input type="checkbox" onchange="toggleCheckbox(this)" id="CBBATSCHUTZ"/></div>
           </div>
         </details>
@@ -462,12 +462,12 @@ const char index_html[] PROGMEM = R"rawliteral(
           </summary>
           <hr>
           <div class="detailsFlexBox">
-            <div>Aktiv: <input type="checkbox" onchange="toggleCheckbox(this)" id="CBTIMER1" /></div>
+            <div>Active: <input type="checkbox" onchange="toggleCheckbox(this)" id="CBTIMER1" /></div>
             <div>Timer 1: <input type="time" id="TIMER1TIME" /></div>
             <div>Watt: <input type="number" min="0" max="2000" id="TIMER1WATT"/></div>
           </div>
           <div class="detailsFlexBox">
-            <div>Aktiv: <input type="checkbox" onchange="toggleCheckbox(this)" id="CBTIMER2" /></div>
+            <div>Active: <input type="checkbox" onchange="toggleCheckbox(this)" id="CBTIMER2" /></div>
             <div>Timer 2: <input type="time" id="TIMER2TIME" /></div>
             <div>Watt: <input type="number" min="0" max="2000" id="TIMER2WATT"/></div>
           </div>       
